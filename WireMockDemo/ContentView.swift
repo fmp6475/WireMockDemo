@@ -9,7 +9,7 @@ struct ContentView: View {
 #if DEBUG
     let url = "http://localhost:1234/login"
 #else
-    let url = "http://real_backend_url/login"
+    let url = "http://real_backend_host/login"
 #endif
     
     var body: some View {
