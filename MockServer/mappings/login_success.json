@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/login",
+        "bodyPatterns": [{
+		      "matchesJsonPath" : "$[?(@.name == \"valid_user\")]"
+		    }]
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "login_success_response.json"
+    }
+}

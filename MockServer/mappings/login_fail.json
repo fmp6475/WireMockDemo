@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/login",
+        "bodyPatterns": [{
+		      "matchesJsonPath" : "$[?(@.name == \"invalid_user\")]"
+		    }]
+    },
+    "response": {
+        "status": 200,
+        "body": "Error"
+    }
+}
